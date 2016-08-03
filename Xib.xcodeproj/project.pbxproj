@@ -13,6 +13,8 @@
 		AA874DE91D5227850086382D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA874DE81D5227850086382D /* Assets.xcassets */; };
 		AA874DEC1D5227850086382D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA874DEA1D5227850086382D /* LaunchScreen.storyboard */; };
 		AA874DF71D5227850086382D /* XibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA874DF61D5227850086382D /* XibTests.swift */; };
+		AA874E081D522C160086382D /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA874E071D522C160086382D /* MyView.xib */; };
+		AA874E0A1D522EF70086382D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA874E091D522EF70086382D /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		AA874DF21D5227850086382D /* XibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA874DF61D5227850086382D /* XibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibTests.swift; sourceTree = "<group>"; };
 		AA874DF81D5227850086382D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA874E071D522C160086382D /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		AA874E091D522EF70086382D /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				AA874DE81D5227850086382D /* Assets.xcassets */,
 				AA874DEA1D5227850086382D /* LaunchScreen.storyboard */,
 				AA874DED1D5227850086382D /* Info.plist */,
+				AA874E071D522C160086382D /* MyView.xib */,
+				AA874E091D522EF70086382D /* MyView.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 			files = (
 				AA874DEC1D5227850086382D /* LaunchScreen.storyboard in Resources */,
 				AA874DE91D5227850086382D /* Assets.xcassets in Resources */,
+				AA874E081D522C160086382D /* MyView.xib in Resources */,
 				AA874DE71D5227850086382D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA874E0A1D522EF70086382D /* MyView.swift in Sources */,
 				AA874DE41D5227850086382D /* ViewController.swift in Sources */,
 				AA874DE21D5227850086382D /* AppDelegate.swift in Sources */,
 			);

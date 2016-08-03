@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var customView: MyView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.customView = NSBundle.mainBundle().loadNibNamed("MyView", owner: self, options: nil)[0] as! MyView
+        self.view.addSubview(customView)
+        customView.viewController = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLayoutSubviews() {
+        self.customView.frame = self.view.frame
     }
-
-
+    
+    // button method passed to view controller
+    func buttonTapped(button:UIButton) {
+        
+    }
 }
 
