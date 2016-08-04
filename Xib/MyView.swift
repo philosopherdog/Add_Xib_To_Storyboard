@@ -9,13 +9,10 @@
 import UIKit
 
 class MyView: UIView {
-
-    @IBOutlet weak var button: UIButton! {
-        didSet {
-            button.addTarget(viewController, action: #selector(ViewController.buttonTapped), forControlEvents: .TouchUpInside)
-        }
-    }
     
-    weak var viewController:ViewController!
+    var buttonHandler:((sender:UIButton)->())!
 
+    @IBAction func buttonTapped(sender: UIButton) {
+        buttonHandler(sender:sender)
+    }
 }

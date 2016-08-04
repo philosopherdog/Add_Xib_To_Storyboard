@@ -14,6 +14,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRA-5O-C4l">
                     <rect key="frame" x="277" y="285" width="46" height="30"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0fy-s7-Wc5"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -21,9 +24,6 @@
                 <constraint firstItem="KRA-5O-C4l" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CTn-7C-YuX"/>
                 <constraint firstItem="KRA-5O-C4l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kvd-iw-lzc"/>
             </constraints>
-            <connections>
-                <outlet property="button" destination="KRA-5O-C4l" id="dc9-b8-A3N"/>
-            </connections>
         </view>
     </objects>
 </document>
